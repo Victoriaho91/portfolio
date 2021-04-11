@@ -1,0 +1,43 @@
+/* @import url('') */
+@font-face{
+  font-family: 'Montserrat-Thin';
+  src: local('Montserrat-Thin'), url('../fonts/Montserrat-Thin.ttf') format('truetype');
+
+}
+
+@font-face{
+
+  font-family: 'Montserrat-SemiBold';
+  src: local('Montserrat-SemiBold'), url('../fonts/Montserrat-SemiBold.ttf') format('truetype')
+
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Montserrat-Thin';
+  color: white;
+}
+
+html, body{
+  min-height: 100%;
+}
+
+body {
+  background: radial-gradient(at top left, #845EC2 0%, #D65DB1 50%, #F9F871 100%);
+  background-repeat: no-repeat;
+};
+
+/* intro */
+
+#intro-container.intro{
+  border-width: 2px solid;
+  border-color: black;
+  /* margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px; */
+  /* margin-top: 100; */
+}

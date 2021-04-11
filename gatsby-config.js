@@ -2,5 +2,13 @@ module.exports = {
   siteMetadata: {
     title: "Victoria Ho Portfolio",
   },
-  plugins: ["gatsby-plugin-gatsby-cloud"],
+  plugins: [
+    "gatsby-plugin-gatsby-cloud",
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -100
+      }
+    }
+  ]
 };
