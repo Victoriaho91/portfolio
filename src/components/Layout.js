@@ -4,16 +4,18 @@ import About from './About'
 import Intro from './Intro'
 import Projects from '../pages/Projects/index'
 import Contact from './Contact'
-import '../styles/styles.css'
+import * as contentStyles from '../styles/content.module.css'
+
+
 
 
 export default function Layout (){
   return(
-    <div className="layout">
+    <div className="layout" >
       <Navbar />
-      <div className="content">
+      <div className={contentStyles.content}>
         <Intro></Intro>
-        <About></About>
+        <About ></About>
         <Projects></Projects>
         <Contact></Contact>
       </div>

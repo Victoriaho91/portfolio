@@ -7,8 +7,8 @@
 
 @font-face{
 
-  font-family: 'Montserrat-SemiBold';
-  src: local('Montserrat-SemiBold'), url('../fonts/Montserrat-SemiBold.ttf') format('truetype')
+  font-family: 'Femen';
+  src: local('Femen'), url('../fonts/Femen.otf') format('opentype')
 
 }
 
@@ -26,18 +26,53 @@ html, body{
 }
 
 body {
+  z-index: -1;
   background: radial-gradient(at top left, #845EC2 0%, #D65DB1 50%, #F9F871 100%);
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 };
 
+.layout{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+nav{
+  display: grid;
+  grid-template-columns: 1fr;
+  /* background-color: cornflowerblue; */
+  overflow: hidden;
+  z-index: 100;
+
+}
+
+nav .links{
+  display: inline-block;
+  text-align: right;
+  margin: 1vw;
+  font-size: 1em;
+}
+
+nav a{
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: 400;
+  padding-bottom: 5px;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover{
+  border-color: white;
+}
+
+footer p {
+  text-align: center;
+  color: #bbb;
+  margin: 40px auto;
+}
 /* intro */
 
-#intro-container.intro{
-  border-width: 2px solid;
-  border-color: black;
-  /* margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px; */
-  /* margin-top: 100; */
+content{
+
 }

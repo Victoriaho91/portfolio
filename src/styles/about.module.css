@@ -1,0 +1,13 @@
+.aboutContainer{
+  height: 50vw;
+  background-color: darkcyan;
+  /* margin-top: -4vw; */
+  top: 0;
+
+}
+
+.header{
+  font-size: 3vw;
+  text-align: center;
+  margin: 3vw;
+}

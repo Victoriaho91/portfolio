@@ -1,0 +1,52 @@
+@font-face{
+
+  font-family: 'Femen';
+  src: local('Femen'), url('../fonts/Femen.otf') format('opentype')
+
+}
+
+@font-face{
+
+  font-family: 'Afrah-Regular';
+  src: local('Afrah-Regular'), url('../fonts/Afrah-Regular.ttf') format('truetype')
+
+}
+
+.introContainer{
+
+  /* margin-top: 15vw; */
+  /* height: 50vw; */
+  background-repeat: no-repeat;
+}
+
+.intro{
+  /* margin-top: 40vw; */
+  margin-left: 18vw;
+  width: 60%;
+  font-size: 5vw;
+  /* border: solid black 2px; */
+}
+
+.typed{
+  /* font-size: 4vw; */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.buttonContainer{
+  /* border: solid black 2px; */
+  align-self:center;
+  /* width: 10vw; */
+  display:flex;
+  justify-content: center;
+}
+
+.button{
+  background: rgb(255, 239, 114);
+  color: black;
+  margin-top: 10vw;
+  width: 15vw;
+  height: 4vw;
+  border:cornsilk 2px solid;
+  border-radius: 10px;
+}
