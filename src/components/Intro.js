@@ -1,9 +1,9 @@
 import React from 'react'
 import Typed from 'react-typed';
-// import '../fonts/Femen.otf'
 import * as introStyles from '../styles/intro.module.css'
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import useWindowDimensions from './WindowDimensions'
+import sal from 'sal.js'
+import '../../node_modules/sal.js/dist/sal.css'
 
 const strings = [
   'Fullstack Engineer.',
@@ -14,21 +14,36 @@ const strings = [
 
 
 export default function Intro (){
-let {width, height } = useWindowDimensions()
-console.log('window heigh==>', height)
+  sal({
+    threshold:1,
+    once: false
+  });
   return(
-    <div id="intro-container" style={{width, height}}className={introStyles.introContainer}>
-      <div style={{marginTop: '15vw'}} className={introStyles.intro}>
-        <span >
-        Victoria Ho |
-        <Typed style={{fontSize: '2.5vw',  display: 'inline-block',verticalAlign: 'middle' }}strings={strings} typeSpeed={80} backSpeed={50} loop/>
+    <div id="intro-container" className={introStyles.introContainer}>
+      <div className={introStyles.intro}>
+        <span className={introStyles.introText}
+        data-sal-duration={"2000"}
+        data-sal={"slide-up"}
+        data-sal-delay={"1200"}
+        data-sal-easing={"ease-out-bounce"}
+        >
+        Hello, I'm Victoria. <br/>
+        </span>
+        <span style={{marginTop:'-6vw' ,fontSize: '2vw',  display: 'inline-block',verticalAlign: 'middle'}}
+        data-sal-duration={"1200"}
+        data-sal={"fade"}
+        data-sal-delay={"1000"}
+        data-sal-easing={"ease"}
+        >
+        <Typed strings={strings} typeSpeed={80} backSpeed={50} loop/>
 
         </span>
-      </div>
       <div className={introStyles.buttonContainer} >
-      <AnchorLink to='/#about-container'  title='about'>
-      <button className={introStyles.button} >View More</button>
+      <AnchorLink className={introStyles.button} to='/#about-container'  title='about'>
+      View More
+      {/* <button className={introStyles.button} >View More</button> */}
       </AnchorLink>
+      </div>
       </div>
     </div>
   )

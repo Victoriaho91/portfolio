@@ -1,6 +1,6 @@
 .aboutContainer{
-  height: 50vw;
-  background-color: darkcyan;
+  height: 110vh;
+  background-color: #634EFF;
   /* margin-top: -4vw; */
   top: 0;
 
@@ -9,5 +9,6 @@
 .header{
   font-size: 3vw;
   text-align: center;
-  margin: 3vw;
+  margin: 6vw;
+  color: white;
 }

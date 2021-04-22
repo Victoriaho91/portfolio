@@ -6,19 +6,26 @@
 }
 
 @font-face{
+  font-family: 'ProductSans-Regular';
+  src: local('ProductSans-Regular'), url('../fonts/ProductSans-Regular.ttf') format('truetype');
+
+}
+
+
+/* @font-face{
 
   font-family: 'Femen';
   src: local('Femen'), url('../fonts/Femen.otf') format('opentype')
 
-}
+} */
 
 
 *{
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: 'Montserrat-Thin';
-  color: white;
+  font-family: 'ProductSans-Regular';
+  color: rgb(29, 29, 29);
 }
 
 html, body{
@@ -26,9 +33,9 @@ html, body{
 }
 
 body {
-  z-index: -1;
-  background: radial-gradient(at top left, #845EC2 0%, #D65DB1 50%, #F9F871 100%);
-  background-repeat: no-repeat;
+  /* /* z-index: -1; */
+  /* background: radial-gradient(at top left, #845EC2 0%, #D65DB1 80%, #F9F871 20%);
+  background-repeat: no-repeat; */
   margin: 0;
   padding: 0;
 };
@@ -40,11 +47,25 @@ body {
 
 nav{
   display: grid;
-  grid-template-columns: 1fr;
-  /* background-color: cornflowerblue; */
+  grid-template-columns: 1fr ;
   overflow: hidden;
   z-index: 100;
 
+}
+
+.navbar{
+  display: grid;
+  grid-template-columns: 1fr ;
+  overflow: hidden;
+  z-index: 100;
+ background: transparent;
+ position: 'sticky';
+ top: 0;
+  width: '100%';
+
+}
+.navbar.active{
+  background: linear-gradient(90deg, rgb(66, 2, 194) 0%, rgb(0,78,194) 100%)
 }
 
 nav .links{
@@ -63,7 +84,7 @@ nav a{
 }
 
 nav a:hover{
-  border-color: white;
+  border-color: #634EFF;
 }
 
 footer p {

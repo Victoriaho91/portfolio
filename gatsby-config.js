@@ -6,6 +6,9 @@ module.exports = {
     "gatsby-plugin-gatsby-cloud",
     {
       resolve: "gatsby-plugin-anchor-links"
+    },
+    {
+      resolve: `gatsby-plugin-scroll-reveal`
     }
   ]
 };
