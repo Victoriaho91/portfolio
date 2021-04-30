@@ -50,7 +50,6 @@ nav{
   grid-template-columns: 1fr ;
   overflow: hidden;
   z-index: 100;
-
 }
 
 .navbar{
@@ -71,8 +70,11 @@ nav{
 nav .links{
   display: inline-block;
   text-align: right;
-  margin: 1vw;
-  font-size: 1em;
+  margin: 2.5vw;
+  margin-right: 4vw;
+  font-size: 1rem;
+  /* border: 2px solid red; */
+
 }
 
 nav a{
