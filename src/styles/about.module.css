@@ -1,9 +1,28 @@
 .aboutContainer{
-  height: 110vh;
-  background-color: #634EFF;
   /* margin-top: -4vw; */
   top: 0;
+  margin: auto;
+  /* border: 2px solid red; */
+  height: 150vh;
 
+
+}
+
+.aboutCard1{
+  border-radius: .5rem;
+  width: 40vw;
+  height: 60vh;
+  background-color: #634EFF;
+  margin-left: -8rem;
+
+
+}
+
+.aboutCard2{
+  border-radius: .5rem;
+  width: 40vw;
+  background-color: #634EFF;
+  margin: 2rem;
 }
 
 .header{
@@ -11,4 +30,9 @@
   text-align: center;
   margin: 6vw;
   color: white;
+}
+
+.aboutText>p{
+  color: white;
+  margin: 3vw;
 }

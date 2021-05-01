@@ -17,9 +17,9 @@
   background: white;
   /* background: radial-gradient(at top left, #b5b5b5 0%, #fafafa 100%); */
   background-repeat: no-repeat;
-  margin-top: -15vh;
+  margin-top: -10vh;
   /* margin-left: 12vw; */
-  height: 120vh;
+  height: 100vh;
   /* display: flex; */
   /* align-self: center; */
   /* margin: auto; */
@@ -27,12 +27,13 @@
 
 .intro{
   /* border: 2px solid red; */
-  margin-top: 30vh;
-  margin-left: 12vw;
+  margin-top: 23vh;
+  margin-left: 10vw;
   /* margin-left: 18vw; */
   /* width: 70%; */
   /* font-size: 6vw; */
     /* border: solid black 2px; */
+  height: 15vh;
 }
 
 .introText{
@@ -44,15 +45,17 @@ line-height: .9;
   /* font-size: 4vw; */
   display: inline-block;
   vertical-align: middle;
+
 }
 
 .buttonContainer{
-  /* border: solid black 2px; */
   align-content:center;
   /* width: 10vw; */
-  margin-top: 10vw;
+  margin-top: 40vh;
   display:flex;
   justify-content: center;
+  overflow: hidden;
+
 }
 
 .button{
@@ -66,7 +69,7 @@ line-height: .9;
   text-align: center;
   color: rgb(255, 255, 255);
   padding-top: .35rem; */
-  font-size: 1.1rem;
+  font-size: .9rem;
   margin-bottom: -2rem;
   color: #484848
   /* padding-top:.8rem; */
@@ -83,7 +86,6 @@ line-height: .9;
 }
 
 .arrow{
-  color: #484848;
 
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
@@ -91,7 +93,9 @@ line-height: .9;
 }
 
 @keyframes arrow {
-  0%, 20%, 50%, 80%, 100% {
+  from { width:355px; }
+  to   { width: 160px; }
+  /* 0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
   40% {
@@ -99,6 +103,6 @@ line-height: .9;
   }
   60% {
     transform: translateY(-15px);
-  }
+  } */
 }
 

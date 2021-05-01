@@ -8,7 +8,7 @@ import DownArrow from '../images/arrow.svg'
 
 
 const strings = [
-  '^1200 Web Developer.',
+  '^300 Web Developer.',
   'Creator.',
   'Fullstack Engineer.'
 ]
@@ -39,7 +39,7 @@ export default function Intro (){
             // data-sal-delay="900"
             // data-sal-easing="easeOutCubic"
           >
-            I'm <span style={{color:'#634EFF'}} >Victoria</span>.<br/>
+            I'm <span style={{color:'#634EFF'}}> Victoria</span>;<br/>
           </span>
 
           <span
@@ -49,7 +49,7 @@ export default function Intro (){
           // data-sal-easing="easeOutCubic"
 
           >
-         <Typed strings={strings} typeSpeed={95} backSpeed={50} loop/>
+          <Typed strings={strings} typeSpeed={90} backSpeed={40}  smartBackspace={true} loop/>
 
 
           </span>
@@ -66,9 +66,9 @@ export default function Intro (){
         // data-sal-once
         >
             <AnchorLink className={introStyles.button} to='/#about-container'  title='about'>
-              View More
+
             <div className={introStyles.downArrow}>
-                <img className={introStyles.arrrow} style={{width: '60px'}} src={DownArrow} alt="down arrow" />
+                <img className={introStyles.arrrow} style={{width: '4rem'}} src={DownArrow} alt="down arrow" />
 
             </div>
             </AnchorLink>
