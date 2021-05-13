@@ -8,9 +8,9 @@ import DownArrow from '../images/arrow.svg'
 
 
 const strings = [
-  '^300 Web Developer.',
-  'Creator.',
-  'Fullstack Engineer.'
+  'full stack engineer.',
+  'creator.',
+  'visualizer.',
 ]
 
 
@@ -31,7 +31,7 @@ export default function Intro (){
             // data-sal-delay="500"
             // data-sal-easing="ease-out-bounce"
           >
-            Hey there, <br/>
+            Hi, my name is <br/>
           </span>
           <span
             // data-sal-duration="1000"
@@ -39,7 +39,7 @@ export default function Intro (){
             // data-sal-delay="900"
             // data-sal-easing="easeOutCubic"
           >
-            I'm <span style={{color:'#634EFF'}}> Victoria</span>.<br/>
+           <span style={{color:'#634EFF'}}> Victoria Ho</span>.<br/>
 
           </span>
 
@@ -50,7 +50,7 @@ export default function Intro (){
           // data-sal-easing="easeOutCubic"
 
           >
-          {/* <Typed strings={strings} typeSpeed={90} backSpeed={40}  smartBackspace={true} loop/> */}
+          I'm a <Typed strings={strings} typeSpeed={90} backSpeed={40}  smartBackspace={true} loop/>
 
 
           </span>
@@ -60,11 +60,11 @@ export default function Intro (){
       </div>
 
       <div className={introStyles.buttonContainer}
-        // data-sal-duration={"1200"}
-        // data-sal={"fade"}
-        // data-sal-delay={"2500"}
-        // data-sal-easing={"ease"}
-        // data-sal-once
+        data-sal-duration={"1200"}
+        data-sal={"fade"}
+        data-sal-delay={"2000"}
+        data-sal-easing={"ease"}
+        data-sal-once
         >
             <AnchorLink className={introStyles.button} to='/#about-container'  title='about'>
 

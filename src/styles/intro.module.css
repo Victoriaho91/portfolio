@@ -15,7 +15,10 @@
 .introContainer{
   z-index: 10;
   background: white;
-  /* background: radial-gradient(at top left, #b5b5b5 0%, #fafafa 100%); */
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background: radial-gradient(at top left, #c09ef7 0%, #7c57ff 100%); */
   /* background-repeat: no-repeat; */
   margin-top: -12vh;
   /* margin-left: 12vw; */
@@ -37,7 +40,7 @@
 }
 
 .introText{
-font-size: 5rem;
+font-size: 4em;
 line-height: .9;
 
 }
@@ -49,18 +52,18 @@ line-height: .9;
 }
 
 .buttonContainer{
-  align-content:center;
   /* width: 10vw; */
-  margin-top: 40vh;
+  /* margin-top: 45vh; */
   display:flex;
+  flex-direction: column;
   justify-content: center;
   overflow: hidden;
 
 }
 
 .button{
-  display:flex;
-  flex-direction: column;
+  /* display:flex;
+  flex-direction: column; */
   /* width: 10rem;
   height: 2rem; */
   /* background: #634EFF;
@@ -71,8 +74,9 @@ line-height: .9;
   padding-top: .35rem; */
   font-size: .9rem;
   margin-bottom: -2rem;
-  color: #484848
-  /* padding-top:.8rem; */
+  color: #484848;
+  /* align-items: flex-end; */
+   /* padding-top:.8rem; */
 }
 
 
