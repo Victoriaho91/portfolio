@@ -8,11 +8,7 @@ const tileData = [
   title: 'Grace and Co.',
   featured: true,
   },
-  // {
-  //   img: 'https://i.ibb.co/hYYKrDC/Screen-Shot-2021-04-22-at-12-48-22-AM.png',
-  //   title: 'Grace and Co.',
-  //   featured: true,
-  //   },
+
 ];
 
 export default tileData;

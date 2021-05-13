@@ -2,33 +2,41 @@ import React, {Component} from 'react'
 import * as aboutStyles from '../styles/about.module.css'
 import sal from 'sal.js'
 import '../../node_modules/sal.js/dist/sal.css'
-
+import Photo from '../images/Photo.png'
 
 export default function About (){
   sal({
     threshold:1,
-    once: false
+    once: true
   });
   return(
-    <div id="about-container" className={aboutStyles.aboutContainer}>
+    <div id="about-container" className={aboutStyles.aboutContainer}
 
-      <h2 className={aboutStyles.header} >About Me</h2>
-      {/* <div>
-        <p
-        data-sal-duration={"1200"}
-        data-sal={"slide-left"}
-        data-sal-delay={"200"}
-        data-sal-easing={"ease"} >
-        Fromage frais cheese and wine red leicester. Croque monsieur cheese strings cheese triangles cheeseburger mascarpone swiss ricotta cauliflower cheese. Blue castello pecorino emmental cheesy grin lancashire monterey jack who moved my cheese say cheese. Cheddar cheesy grin.
-        </p>
-        <p
+    >
+      <div className={aboutStyles.aboutCard1}
+      >
+
+        <div className={aboutStyles.aboutText}
+         data-sal-duration={"1200"}
+         data-sal={"slide-right"}
+         data-sal-delay={"100"}
+         data-sal-easing={"ease"}
+        >
+          <h2 className={aboutStyles.header} >About Me</h2>
+          <p>
+          I'm a Full Stack Engineer born and raised in NYC. I have a passion for building elegant and performant UX/UI by incorporating intuitive design and usability into the work that I do to deliver meaningful experiences to end-users.
+          </p>
+
+        </div>
+
+        <img className={aboutStyles.photo}src={Photo}
         data-sal-duration={"1200"}
         data-sal={"slide-right"}
-        data-sal-delay={"1000"}
-        data-sal-easing={"ease"}>
-          Emmental stinking bishop macaroni cheese. Pecorino brie cheese strings danish fontina cauliflower cheese goat edam everyone loves. Smelly cheese fromage who moved my cheese emmental airedale fromage frais taleggio paneer. Smelly cheese babybel roquefort stilton blue castello port-salut the big cheese.
-        </p>
-      </div> */}
+        data-sal-delay={"700"}
+        data-sal-easing={"ease"}
+        ></img>
+        </div>
+
     </div>
 
   )

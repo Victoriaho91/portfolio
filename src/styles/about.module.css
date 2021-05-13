@@ -1,14 +1,50 @@
 .aboutContainer{
-  height: 110vh;
-  background-color: #634EFF;
-  /* margin-top: -4vw; */
-  top: 0;
+  margin-top: 5vh;
+  /* top: 0; */
+  margin: auto;
+  height: 90vh;
+  width:100%;
+  /* border: 2px solid red; */
+
 
 }
 
+.aboutCard1{
+  top:0;
+  /* border: 2px solid red; */
+  display:flex;
+  margin-top: 15vh;
+ /* display:flex;
+ flex-direction: column; */
+  /* margin-left: -30vw; */
+  padding: 5rem;
+  /* border: 2px red solid; */
+
+}
+
+
 .header{
-  font-size: 3vw;
+  font-size: 2rem;
   text-align: center;
-  margin: 6vw;
-  color: white;
+  /* margin: 6vw; */
+  color: black;
+}
+
+.aboutText>p{
+  color: black;
+  margin: 3vw;
+  font-size: 1.2rem;
+  display:flex;
+  flex-direction: column;
+align-items: center;}
+
+/* .photoContainer {
+
+} */
+
+img{
+  border-radius: 50%;
+  /* min-width: 400px; */
+  max-width: 40%;
+  height: auto;
 }

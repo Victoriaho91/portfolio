@@ -34,7 +34,7 @@ html, body{
 
 body {
   /* /* z-index: -1; */
-  /* background: radial-gradient(at top left, #845EC2 0%, #D65DB1 80%, #F9F871 20%);
+/* background: radial-gradient(at top left, #845EC2 0%, #D65DB1 80%, #F9F871 20%);
   background-repeat: no-repeat; */
   margin: 0;
   padding: 0;
@@ -50,19 +50,15 @@ nav{
   grid-template-columns: 1fr ;
   overflow: hidden;
   z-index: 100;
-}
-
-.navbar{
-  display: grid;
-  grid-template-columns: 1fr ;
-  overflow: hidden;
-  z-index: 100;
- background: transparent;
- position: 'sticky';
- top: 0;
+  background: white;
+  position: 'sticky';
+  top: 0;
   width: '100%';
+  /* border: 2px red solid; */
 
 }
+
+
 .navbar.active{
   background: linear-gradient(90deg, rgb(66, 2, 194) 0%, rgb(0,78,194) 100%)
 }
@@ -70,9 +66,9 @@ nav{
 nav .links{
   display: inline-block;
   text-align: right;
-  margin: 2.5vw;
-  margin-right: 4vw;
-  font-size: 1rem;
+   margin-right: 4vw;
+  font-size: 1em;
+  margin-top: 1.5vh;
   /* border: 2px solid red; */
 
 }
