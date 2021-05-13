@@ -1,38 +1,37 @@
 .aboutContainer{
-  /* margin-top: -4vw; */
-  top: 0;
+  margin-top: 8vh;
+  /* top: 0; */
   margin: auto;
-  /* border: 2px solid red; */
-  height: 150vh;
+  height: 90vh;
+  width:100%;
 
 
 }
 
 .aboutCard1{
+  border: 2px solid red;
   border-radius: .5rem;
-  width: 40vw;
+  width: 60vw;
   height: 60vh;
-  background-color: #634EFF;
-  margin-left: -8rem;
-
+ margin-top: 25vh;
+ display:flex;
+ flex-direction: column;
+  /* margin-left: -30vw; */
+  /* padding: 2rem; */
+  /* border: 2px red solid; */
 
 }
 
-.aboutCard2{
-  border-radius: .5rem;
-  width: 40vw;
-  background-color: #634EFF;
-  margin: 2rem;
-}
 
 .header{
-  font-size: 3vw;
+  font-size: 2rem;
   text-align: center;
-  margin: 6vw;
-  color: white;
+  /* margin: 6vw; */
+  color: black;
 }
 
 .aboutText>p{
-  color: white;
+  color: black;
   margin: 3vw;
+  font-size: 1.2rem;
 }

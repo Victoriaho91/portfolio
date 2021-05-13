@@ -6,7 +6,7 @@ import '../../node_modules/sal.js/dist/sal.css'
 
 export default function About (){
   sal({
-    threshold:.2,
+    threshold:1,
     once: true
   });
   return(
@@ -23,28 +23,14 @@ export default function About (){
         <h2 className={aboutStyles.header} >About Me</h2>
         <div className={aboutStyles.aboutText}>
           <p>
-          Fromage frais cheese and wine red leicester. Croque monsieur cheese strings cheese triangles cheeseburger mascarpone swiss ricotta cauliflower cheese. Blue castello pecorino emmental cheesy grin lancashire monterey jack who moved my cheese say cheese. Cheddar cheesy grin.Emmental stinking bishop macaroni cheese. Pecorino brie cheese strings danish fontina cauliflower cheese goat edam everyone loves. Smelly cheese fromage who moved my cheese emmental airedale fromage frais taleggio paneer. Smelly cheese babybel roquefort stilton blue castello port-salut the big cheese.
+          I'm a Full Stack Engineer with a passion for building elegant and performant UX/UI. I love incorporating intuitive design and usability into the work that I do to deliver meaningful experiences to end-users.
           </p>
 
         </div>
 
       </div>
 
-      <div className={aboutStyles.aboutCard2}
-         data-sal-duration={"1200"}
-         data-sal={"flip-up"}
-         data-sal-delay={"200"}
-         data-sal-easing={"ease"}
-      >
 
-        <div className={aboutStyles.aboutText}>
-          <p>
-          Fromage frais cheese and wine red leicester. Croque monsieur cheese strings cheese triangles cheeseburger mascarpone swiss ricotta cauliflower cheese. Blue castello pecorino emmental cheesy grin lancashire monterey jack who moved my cheese say cheese. Cheddar cheesy grin.Emmental stinking bishop macaroni cheese. Pecorino brie cheese strings danish fontina cauliflower cheese goat edam everyone loves. Smelly cheese fromage who moved my cheese emmental airedale fromage frais taleggio paneer. Smelly cheese babybel roquefort stilton blue castello port-salut the big cheese.
-          </p>
-
-        </div>
-
-      </div>
     </div>
 
   )

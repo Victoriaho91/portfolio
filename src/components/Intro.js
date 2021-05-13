@@ -39,7 +39,8 @@ export default function Intro (){
             // data-sal-delay="900"
             // data-sal-easing="easeOutCubic"
           >
-            I'm <span style={{color:'#634EFF'}}> Victoria</span>;<br/>
+            I'm <span style={{color:'#634EFF'}}> Victoria</span>.<br/>
+
           </span>
 
           <span
@@ -49,7 +50,7 @@ export default function Intro (){
           // data-sal-easing="easeOutCubic"
 
           >
-          <Typed strings={strings} typeSpeed={90} backSpeed={40}  smartBackspace={true} loop/>
+          {/* <Typed strings={strings} typeSpeed={90} backSpeed={40}  smartBackspace={true} loop/> */}
 
 
           </span>
@@ -68,7 +69,7 @@ export default function Intro (){
             <AnchorLink className={introStyles.button} to='/#about-container'  title='about'>
 
             <div className={introStyles.downArrow}>
-                <img className={introStyles.arrrow} style={{width: '4rem'}} src={DownArrow} alt="down arrow" />
+                <img style={{width: '4rem'}} src={DownArrow} alt="down arrow" />
 
             </div>
             </AnchorLink>

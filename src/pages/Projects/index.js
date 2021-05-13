@@ -5,8 +5,10 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import IconButton from '@material-ui/core/IconButton';
-import GitHubIcon from '@material-ui/icons/GitHub';import tileData from './tileData';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import * as projectStyles from '../../styles/projects.module.css'
+import tileData from './tileData';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -36,7 +38,7 @@ export default function Projects (){
   const classes = useStyles();
 
   return(
-    <div id='projects-container' className={projectStyles.container}>
+    <div id='projects-container' >
       <h2>Projects Section</h2>
       <div className={classes.root}>
       <GridList cellHeight={300}  spacing={20} className={classes.gridList}>
@@ -46,14 +48,6 @@ export default function Projects (){
         {tileData.map((tile) => (
           <GridListTile key={tile.img}>
             <img src={tile.img} alt={tile.title} />
-            {/* <GridListTileBar className={classes.titleBar}
-              title={tile.title}
-              actionIcon={
-                <IconButton aria-label={`info about ${tile.title}`} className={classes.icon}>
-                  <GitHubIcon />
-                </IconButton>
-              }
-            /> */}
           </GridListTile>
         ))}
       </GridList>
